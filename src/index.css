@@ -4,89 +4,99 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 0 0% 100%; /* White */
+    --foreground: 220 30% 20%; /* Dark Blue/Gray */
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%; /* White */
+    --card-foreground: 220 30% 20%; /* Dark Blue/Gray */
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%; /* White */
+    --popover-foreground: 220 30% 20%; /* Dark Blue/Gray */
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 205 90% 50%; /* Doraemon Blue */
+    --primary-foreground: 0 0% 100%; /* White */
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 50 100% 60%; /* Cheerful Yellow */
+    --secondary-foreground: 50 100% 15%; /* Dark Brown/Yellow for contrast */
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 210 20% 94%; /* Light Gray */
+    --muted-foreground: 210 10% 45%; /* Mid Gray */
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 0 90% 60%; /* Red */
+    --accent-foreground: 0 0% 100%; /* White */
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 80% 55%; /* Intense Red */
+    --destructive-foreground: 0 0% 100%; /* White */
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 210 20% 88%; /* Light Neutral Gray/Blue */
+    --input: 210 20% 88%; /* Light Neutral Gray/Blue */
+    --ring: 0 90% 60%; /* Red (accent) for focus */
 
-    --radius: 0.5rem;
+    --radius: 0.75rem; /* More rounded corners */
 
-    --sidebar-background: 0 0% 98%;
+    /* Playful, rounded fonts */
+    --font-body: "Nunito", "Quicksand", "Comic Sans MS", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-heading: "Nunito", "Quicksand", "Comic Sans MS", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    /* Sidebar Theme - Light */
+    --sidebar-background: 205 80% 96%; /* Very Light Blue */
+    --sidebar-foreground: 205 60% 30%; /* Mid Blue */
+    --sidebar-primary: 205 90% 50%;    /* Doraemon Blue */
+    --sidebar-primary-foreground: 0 0% 100%; /* White */
+    --sidebar-accent: 0 90% 60%;       /* Red */
+    --sidebar-accent-foreground: 0 0% 100%; /* White */
+    --sidebar-border: 205 50% 85%;     /* Light Blue Gray */
+    --sidebar-ring: 0 90% 60%;         /* Red */
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    --background: 220 30% 10%; /* Very Dark Blue/Gray */
+    --foreground: 210 20% 90%; /* Light Gray/Off-White */
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 220 30% 15%; /* Slightly Lighter Dark */
+    --card-foreground: 210 20% 90%; /* Light Gray/Off-White */
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 220 30% 15%; /* Slightly Lighter Dark */
+    --popover-foreground: 210 20% 90%; /* Light Gray/Off-White */
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 205 90% 65%; /* Lighter Doraemon Blue */
+    --primary-foreground: 205 90% 10%; /* Very Dark Blue for contrast */
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 50 100% 70%; /* Lighter Cheerful Yellow */
+    --secondary-foreground: 50 100% 15%; /* Dark Brown/Yellow */
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 220 20% 20%; /* Darker Gray */
+    --muted-foreground: 210 15% 65%; /* Lighter Gray */
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 0 90% 70%; /* Lighter Red */
+    --accent-foreground: 0 90% 10%; /* Dark Red/Brown for contrast */
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 80% 65%; /* Brighter Red */
+    --destructive-foreground: 0 80% 10%; /* Dark Red/Brown */
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --border: 220 20% 25%; /* Darker Gray */
+    --input: 220 20% 25%; /* Darker Gray */
+    --ring: 0 90% 70%; /* Lighter Red (dark mode accent) for focus */
+
+    /* Sidebar Theme - Dark */
+    --sidebar-background: 220 30% 12%; /* Darker than main dark bg */
+    --sidebar-foreground: 210 20% 80%; /* Light Gray */
+    --sidebar-primary: 205 90% 65%;    /* Lighter Doraemon Blue */
+    --sidebar-primary-foreground: 205 90% 10%; /* Very Dark Blue */
+    --sidebar-accent: 0 90% 70%;       /* Lighter Red */
+    --sidebar-accent-foreground: 0 90% 10%; /* Dark Red/Brown */
+    --sidebar-border: 220 20% 20%;     /* Darker Gray */
+    --sidebar-ring: 0 90% 70%;         /* Lighter Red */
+  }
+}
+
+@layer utilities {
+  .font-body {
+    font-family: var(--font-body);
+  }
+
+  .font-heading {
+    font-family: var(--font-heading);
   }
 }
 
@@ -96,6 +106,10 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-body; /* Apply body font by default */
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading; /* Apply heading font to heading elements */
   }
 }
