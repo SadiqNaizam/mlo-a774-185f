@@ -68,6 +68,11 @@ export default {
 				md: 'calc(var(--radius) - 2px)',
 				sm: 'calc(var(--radius) - 4px)'
 			},
+			fontFamily: {
+        // Make CSS custom font properties available as Tailwind utilities
+        sans: ['var(--font-body)'], // Use for general text (maps to .font-sans)
+        heading: ['var(--font-heading)'], // Use for headings (maps to .font-heading)
+      },
 			keyframes: {
 				'accordion-down': {
 					from: {
